@@ -1,0 +1,382 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+    width: 100px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+header .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header .nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+header .search-cart {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+header .search-cart input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+header .search-cart a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+/* Home Section */
+.home {
+    background-color: #FF6F61;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.home h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.home .cta-button {
+    background-color: #fff;
+    color: #FF6F61;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+/* Shop Section */
+.shop {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.shop h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.shop .product-card {
+    display: inline-block;
+    width: 30%;
+    margin: 15px;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.shop .product-card img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.shop .product-card button {
+    background-color: #FF6F61;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.shop .product-card button:hover {
+    background-color: #FF3E2E;
+}
+
+/* About Us Section */
+.about {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact form input,
+.contact form textarea,
+.contact form button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact form button {
+    background-color: #FF6F61;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact form button:hover {
+    background-color: #FF3E2E;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+footer .footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .footer-links ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer .footer-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .social-media {
+    margin-top: 20px;
+}
+
+footer .social-media a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Media Queries for Mobile & Tablet */
+
+/* For devices with a max-width of 768px (tablets and smaller devices) */
+@media (max-width: 768px) {
+    header nav {
+        display: none; /* Hide the desktop nav */
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header .nav-links {
+        flex-direction: column;
+        gap: 15px;
+        padding: 0;
+    }
+
+    header .search-cart {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex; /* Show hamburger menu */
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .hero .cta-button {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+
+    .categories {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .categories .category {
+        margin-bottom: 20px;
+    }
+
+    .featured-products .product-card {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    /* Home Section */
+    .home h1 {
+        font-size: 36px;
+    }
+
+    /* Shop Section */
+    .shop .product-card {
+        width: 100%; /* Stack product cards vertically */
+        margin: 20px 0;
+    }
+
+    .shop .product-card button {
+        padding: 12px 30px;
+    }
+
+    /* About Us Section */
+    .about p {
+        font-size: 16px;
+        margin: 0 20px;
+    }
+
+    /* Contact Section */
+    .contact form input,
+    .contact form textarea,
+    .contact form button {
+        padding: 10px;
+    }
+
+    .contact form input,
+    .contact form textarea {
+        margin-bottom: 15px;
+    }
+}
+
+/* For devices with a max-width of 480px (smaller mobile devices) */
+@media (max-width: 480px) {
+    header .logo img {
+        width: 80px;
+    }
+
+    header .nav-links li a {
+        font-size: 14px;
+    }
+
+    .home h1 {
+        font-size: 28px;
+    }
+
+    .home .cta-button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .shop .product-card {
+        width: 100%;
+    }
+
+    .shop .product-card button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+        /* Regular price styling (crossed out) */
+     
+    .regular-price {
+        text-decoration: line-through !important;
+        color: #999;
+        font-size: 16px;
+        margin: 0;
+        
+    }
+
+      /* Discount price styling (emphasized) */
+    .discount-price {
+       color: #FF6F61;  /* You can use any color that stands out */
+       font-size: 18px;
+       font-weight: bold;
+       margin: 5px 0;
+    }
+
+    .terms-conditions {
+        margin: 30px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .terms-conditions h1 {
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    
+    .terms-conditions p {
+        line-height: 1.6;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    
+    .terms-conditions p strong {
+        font-weight: bold;
+    }
+
+    
+}
