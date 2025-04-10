@@ -16,9 +16,33 @@
         <nav>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Categories</a>
+                    
+
+                            <ul class="submenu">
+                                <li><a href="#">Saree</a></li>
+                                <li><a href="#">Jamdani Two Pcs and Three Pcs</a></li>
+                                <li><a href="#">Cotton Batik Saree</a></li>
+                                <li><a href="#">Silk Batik Saree</a></li>
+                                <li><a href="#">Dupian Silk Saree</a></li>
+                                <li><a href="#">Halfsilk Saree</a></li>
+                                <li><a href="#">Embroidery Saree</a></li>
+                                <li><a href="#">Cotton Saree</a></li>
+                                <li><a href="#">Silk Katan Saree</a></li>
+                                <li><a href="#">Festival Saree</a></li>
+                                <li><a href="#">Georgette Saree</a></li>
+                            </ul>
+                        
+                    
+                       
+                  </li>
                 <li><a href="#shop">Shop</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#contact">Contact</a></li>
+                
+                
+
             </ul>
             <div class="menu-toggle" id="mobile-menu">
                 <span class="bar"></span>
@@ -43,57 +67,130 @@
 
     <!-- Shop Section -->
     <section id="shop" class="shop">
-        <h2>Our Products</h2>
-        <div class="product-card">
-            <img src="images/pro2.jpg" alt="Product Name" >
-            <h3>Dhakiya Jamdani</h3>
-            <p class="regular-price">Regular Price: 1890.00 Tk</p>
-            <p class="discount-price">Discount Price: 1590.00 Tk</p>
-            <button>Add to Cart</button>
-        </div>
         
-        <div class="product-card">
-            <img src="images/pro3.jpg" alt="Product Name" >
-            <h3>Dhakiya Jamdani</h3>
-            <p class="regular-price">Regular Price: 1890.00 Tk</p>
-            <p class="discount-price">Discount Price: 1590.00 Tk</p>
-            <button>Add to Cart</button>
-        </div>
+        <div class="container">
+            <h2>Our Products</h2>
+          <div class="shop-container">
+                
+                <!-- Sidebar -->
+        
+                
+              
+                <div class="product-grid">
+               
+             <div class="product-card"  onclick="openModel(1)">
+                <img src="images/pro2.jpg" alt="Dhakiya Jamdani" >
+                <h3>Dhakiya Jamdani</h3>
+                <p class="regular-price">Regular Price: 1890.00 Tk</p>
+                <p class="discount-price">Discount Price: 1590.00 Tk</p>
+                <button>Order Now</button>
+          
+              </div>
+        
+              <div class="product-card" onclick="openModel(2)">
+                 <img src="images/pro3.jpg" alt="Dhakiya Jamdani" >
+                 <h3>Dhakiya Jamdani</h3>
+                 <p class="regular-price">Regular Price: 1890.00 Tk</p>
+                 <p class="discount-price">Discount Price: 1590.00 Tk</p>
+                 <button>Order Now</button>
+                </div>
         
         
-        <div class="product-card">
-            <img src="images/pro5.jpg" alt="Product Name" >
-            <h3>Dhakiya Jamdani</h3>
-            <p class="regular-price">Regular Price: 1890.00 Tk</p>
-            <p class="discount-price">Discount Price: 1590.00 Tk</p>
-            <button>Add to Cart</button>
+                <div class="product-card" onclick="openModel(3)">
+                   <img src="images/pro5.jpg" alt="Dhakiya Jamdani" >
+                   <h3>Dhakiya Jamdani</h3>
+                   <p class="regular-price">Regular Price: 1890.00 Tk</p>
+                   <p class="discount-price">Discount Price: 1590.00 Tk</p>
+                   <button>Order Now</button>
+               </div>
+
+                <div class="product-card" onclick="openModel(4)">
+                    <img src="images/pro6.jpg" alt="Dhakiya Jamdani" >
+                    <h3>Dhakiya Jamdani</h3>
+                    <p class="regular-price">Regular Price: 1890.00 Tk</p>
+                    <p class="discount-price">Discount Price: 1590.00 Tk</p>
+                    <button>Order Now</button>
+                </div>
+
+                <div class="product-card" onclick="openModel(5)">
+                    <img src="images/pro7.jpg" alt="Dhakiya Jamdani" >
+                    <h3>Dhakiya Jamdani</h3>
+                    <p class="regular-price">Regular Price: 1890.00 Tk</p>
+                    <p class="discount-price">Discount Price: 1590.00 Tk</p>
+                    <button>Order Now</button>
+                </div>
+
+                <div class="product-card" onclick="openModel(6)">
+                    <img src="images/pro4.jpg" alt="Dhakiya Jamdani" >
+                    <h3>Dhakiya Jamdani</h3>
+                    <p class="regular-price">Regular Price: 1890.00 Tk</p>
+                    <p class="discount-price">Discount Price: 1590.00 Tk</p>
+                    <button>Order Now</button>
+                </div>
+           </div>
+          </div>
         </div>
 
-        <div class="product-card">
-            <img src="images/pro6.jpg" alt="Product Name" >
-            <h3>Dhakiya Jamdani</h3>
-            <p class="regular-price">Regular Price: 1890.00 Tk</p>
-            <p class="discount-price">Discount Price: 1590.00 Tk</p>
-            <button>Add to Cart</button>
-        </div>
-
-        <div class="product-card">
-            <img src="images/pro7.jpg" alt="Product Name" ">
-            <h3>Dhakiya Jamdani</h3>
-            <p class="regular-price">Regular Price: 1890.00 Tk</p>
-            <p class="discount-price">Discount Price: 1590.00 Tk</p>
-            <button>Add to Cart</button>
-        </div>
-
-        <div class="product-card">
-            <img src="images/pro4.jpg" alt="Product Name" ">
-            <h3>Dhakiya Jamdani</h3>
-            <p class="regular-price">Regular Price: 1890.00 Tk</p>
-            <p class="discount-price">Discount Price: 1590.00 Tk</p>
-            <button>Add to Cart</button>
-        </div>
+      
+      
         
     </section>
+
+    <!-- Recommended For You Section -->
+    <section id="recommended">
+        <div class="container">
+            <h2>Recommended For You</h2>
+            <div class="recommended-grid">
+                <!-- Product 1 -->
+                <div class="recommended-product">
+                    <img src="saree1.jpg" alt="Silk Batik Saree">
+                    <h3>Silk Batik Saree</h3>
+                    <p>$50.00</p>
+                </div>
+                <!-- Product 2 -->
+                <div class="recommended-product">
+                    <img src="saree2.jpg" alt="Dupian Silk Saree">
+                    <h3>Dupian Silk Saree</h3>
+                    <p>$70.00</p>
+                </div>
+                <!-- Product 3 -->
+                <div class="recommended-product">
+                    <img src="saree3.jpg" alt="Half Silk Saree">
+                    <h3>Half Silk Saree</h3>
+                    <p>$40.00</p>
+                </div>
+                <!-- Product 4 -->
+                <div class="recommended-product">
+                    <img src="saree4.jpg" alt="Cotton Saree">
+                    <h3>Cotton Saree</h3>
+                    <p>$30.00</p>
+                </div>
+                <!-- Product 5 -->
+                <div class="recommended-product">
+                    <img src="saree5.jpg" alt="Georgette Saree">
+                    <h3>Georgette Saree</h3>
+                    <p>$60.00</p>
+                </div>
+                <!-- Product 6 -->
+                <div class="recommended-product">
+                    <img src="saree6.jpg" alt="Festival Saree">
+                    <h3>Festival Saree</h3>
+                    <p>$80.00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Modal (Hidden by default) -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">×</span>
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+            <p id="modal-price"></p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
 
     
 
